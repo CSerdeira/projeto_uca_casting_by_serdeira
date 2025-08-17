@@ -6,7 +6,6 @@ Permite adicionar, editar, excluir e filtrar registros em tabela dinâmica.
 Funcionalidades
 - Adicionar, editar e excluir conteúdos.  
 - Filtro em tempo real por qualquer coluna.  
-- Dropdown de seleção para instrutores.  
 - Cabeçalho fixo da tabela durante rolagem.  
 
 Tecnologias
