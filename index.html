@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCA Controle de Casting</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Planilha de controle de casting</h1>
+
+        <div class="add-item-form">
+            <h2>Adicone / Edite </h2>
+            <form id="addItemForm">
+                <input type="text" id="instrutoresConvidados" placeholder="Instrutores / Convidados" required>
+                <input type="text" id="videoTransmissao" placeholder="Vídeo / Transmissão" required>
+                <input type="text" id="produto" placeholder="Produto" required>
+                <input type="text" id="vertical" placeholder="Vertical" required>
+                <input type="date" id="data" required>
+                <input type="url" id="link" placeholder="Link" required>
+                <input type="text" id="publicadoEm" placeholder="Publicado em" required>
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+
+<div class="filter-actions">
+    <input type="text" id="searchInput" placeholder="Filtrar por qualquer coluna...">
+    <button id="clearFilterBtn" class="btnFilter">Limpar Filtro</button>
+</div>
+
+        <div class="table-container">
+            <table id="productTable">
+                <thead>
+                    <tr>
+                        <th>Instrutores / Convidados</th>
+                        <th>Vídeo / Transmissão</th>
+                        <th>Produto</th>
+                        <th>Vertical</th>
+                        <th>Data</th>
+                        <th>Link</th>
+                        <th>Publicado em</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Instrutores / Convidados">Bruno Motta</td>
+                        <td data-label="Vídeo / Transmissão">Reforma Tributária</td>
+                        <td data-label="Produto">Fiscal</td>
+                        <td data-label="Vertical">Pack</td>
+                        <td data-label="Data">15/11/2025</td>
+                        <td data-label="Link"><a href="#">Link do YouTube</a></td>
+                        <td data-label="Publicado em">YouTube</td>
+                        <td data-label="Ações" class="actions-cell">
+                            <button class="edit-btn">Editar</button>
+                            <button class="delete-btn">Excluir</button>
+                        </td>
+                    </tr>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
